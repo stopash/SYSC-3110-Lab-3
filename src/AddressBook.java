@@ -17,6 +17,9 @@ public class AddressBook {
     }
 
     public static void main(String[] args) {
-        System.out.println("Address Book");
+        BuddyInfo buddy = new BuddyInfo("HappyMan105", 1051051234, "105 Happy Lane");
+        AddressBook book = new AddressBook();
+        book.addBuddy(buddy);
+        book.removeBuddy(buddy);
     }
 }
